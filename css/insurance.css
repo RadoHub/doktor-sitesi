@@ -9,10 +9,9 @@
 #insurance .container {
   max-width: 1180px;
   height: 60vh;
-  
+  min-height60vh:
   margin: auto auto;
   padding: 10vh 2rem;
-  height: 100%;
 }
 
 /* TITLE */
