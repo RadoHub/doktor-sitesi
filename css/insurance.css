@@ -2,6 +2,7 @@
 
 #insurance {
   max-width: 1200px;
+  width:1800px;
   min-width:1100px;
   height: 60vh;
   background: var(--gold);
