@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css" >
+    <link rel="stylesheet" href="css/announcement.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/insurance.css">    
+    <link rel="stylesheet" href="css/vlog.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="topbar-emergency">
+        <div class="emergency-badge"><i class="fa fa-phone"></i>ACiL: 112</div>
+        <div class="topbar-info">
+            <a href="tel:+49232353025"><i class="fa fa-phone-alt"></i><span> 0 232 353 025</span></a>
+            <a href="mailto:praxis@cintosun.de"><i class="fa fa-envelope"></i><span> praxis@cintosun.de</span></a>
+            <a href="#"><i class="fa fa-map-marker-alt"></i> Schaeferstraße 9, 44623 Herne</a>
+        </div>
+        </div>
+
+        <div class="topbar-social">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <a class="logo" href="#">
+        <span class="logo-title"><span>Dr.</span> Atilla Cintosun</span>
+        <span class="logo-sub">Dahiliye &amp; Genel Tip . Herne</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hizmetler">Hizmetler</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="#blog">Bloglar</a></li>
+      </ul>
+    </nav>
+    
+
+    
+
+    <!-- HERO CAROUSEL -->
+    <div class="hero" id="carousel-section">
+      <!-- Sadece slide'lar burada -->
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="carousel-slide active">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #0a1628 0%, #0f4f6e 100%);"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <span class="slide-tag">Kardiyoloji</span>
+            <h2 class="slide-title">Kalp Sağlığınız<br>Bizim Önceliğimiz</h2>
+            <p class="slide-desc">Almanya'nın önde gelen kardiyoloji merkezlerinden birinde modern teknoloji ile kapsamlı kalp sağlığı hizmetleri sunuyoruz.</p>
+            <a href="#iletisim" class="slide-btn">Randevu Al</a>
+        </div>
+        </div>
+
+        <div class="carousel-slide">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #0a2818 0%, #0f6e4f 100%);"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <span class="slide-tag">Önleyici Tıp</span>
+            <h2 class="slide-title">Erken Teşhis<br>Yaşam Kurtarır</h2>
+            <p class="slide-desc">Düzenli kontroller ve ileri tanı yöntemleriyle hastalıkları erken aşamada tespit ediyor, tedavi süreçlerini hızlandırıyoruz.</p>
+            <a href="#hizmetler" class="slide-btn">Hizmetlerimiz</a>
+        </div>
+        </div>
+
+        <div class="carousel-slide">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #1a0a28 0%, #4f0f6e 100%);"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <span class="slide-tag">Araştırma</span>
+            <h2 class="slide-title">Bilim ve Tıbbı<br>Buluşturuyoruz</h2>
+            <p class="slide-desc">Uluslararası tıp dergilerinde yayımlanan 50'den fazla makale ile tıp dünyasına katkı sağlıyoruz.</p>
+            <a href="#makaleler" class="slide-btn">Makaleleri İncele</a>
+        </div>
+        </div>
+
+        <div class="carousel-slide">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #1a1a0a 0%, #6e5f0f 100%);"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <span class="slide-tag">Hasta Odaklı</span>
+            <h2 class="slide-title">Güvenli ve Hızlı<br>Tedavi Süreci</h2>
+            <p class="slide-desc">Hastanın konforunu ve güvenliğini her zaman ön planda tutarak en kaliteli tedaviyi sunmak için buradayız.</p>
+            <a href="#iletisim" class="slide-btn">Bize Ulaşın</a>
+        </div>
+        </div>
+
+        <div class="carousel-slide">
+        <div class="slide-bg" style="background: linear-gradient(135deg, #0a181a 0%, #0f6e6e 100%);"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <span class="slide-tag">Ekip</span>
+            <h2 class="slide-title">Uzman Kadromuzla<br>Yanınızdayız</h2>
+            <p class="slide-desc">Deneyimli doktor ve hemşirelerden oluşan ekibimiz, tedavi sürecinizin her aşamasında size destek olmak için hazır.</p>
+            <a href="#ekibimiz" class="slide-btn">Ekibimizi Tanıyın</a>
+        </div>
+        </div>
+     </div>
+    
+
+    <!-- Stats track dışında olmalı -->
+    <div class="hero-stats">
+      <div class="stat-pill"><strong>18+</strong><span>YIL DENEYİM</span></div>
+      <div class="stat-pill"><strong>4.9</strong><span>JAMEDA PUANI</span></div>
+      <div class="stat-pill"><strong>3.200+</strong><span>HASTA</span></div>
+    </div>
+
+    <!-- Controls track dışında olmalı -->
+    <div class="carousel-controls">
+        <div class="dots" id="dotsContainer"></div>
+
+        <div class="arrow-btns">
+          <button class="arrow-btn" onclick="prevSlide()">←</button>
+          <button class="arrow-btn" onclick="nextSlide()">→</button>
+        </div>
+    </div>
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <span>KAYDIRIN</span>
+      </div>
+    </div>
+
+    <!-- ANNOUNCEMENTS -->
+    <section id="announcements">
+        <div class="announcements-inner">
+            <div class="section-label">Son Haberler</div>
+            <div class="section-title">Duyurular</div>
+            <div class="ann-ticker-wrap">
+            <div class="ann-ticker" id="annTicker"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+    <div class="container">
+        <div class="team-fade-in">
+            <div class="section-label" >Uzman Doktor Ekibimiz</div>
+            <h2 class="section-title" >Uzman Doktorlar</h2>
+            <p class="section-sub">Sizinle ilgilenecek deneyimli uzmanlar.</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card team-fade-in">
+                <div class="team-card-img">
+                <div style="position:absolute;inset:0;background:linear-gradient(160deg,#1a2d4f,#2e4e82);">
+                    
+                </div>
+                <div class="team-avatar-large" style="position:relative;"><img src="img/cintosun.jpg" alt="AC"></div>
+                </div>
+                <div class="team-card-body">
+                <h3>Dr. med. Atilla Cintosun</h3>
+                <div class="team-card-role">İç Hastalıkları Uzmanı, Genel Tıp Uzmanı</div>
+                <p>Genel tıp alanında, özellikle diyabet ve beslenme tıbbı konusunda 20 yılı aşkın deneyime sahip. Almanca ve Türkçe konuşmaktadır.</p>
+                <div class="team-tags">
+                    <span class="team-tag">Diabetes</span>
+                    <span class="team-tag">Ernährungsmedizin</span>
+                    <span class="team-tag">Hausarzt</span>
+                    <span class="team-tag">Türkçe</span>
+                </div>
+                </div>
+            </div>
+            <div class="team-card team-fade-in">
+                <div class="team-card-img">
+                <div style="position:absolute;inset:0;background:linear-gradient(160deg,#243b63,#3a5a8a);"></div>
+                <div class="team-avatar-large" style="position:relative;">EK</div>
+                </div>
+                <div class="team-card-body">
+                <h3>Dr. med. Samir Othman</h3>
+                <div class="team-card-role">Genel tıp uzmanı</div>
+                <p>İç hastalıkları ve önleyici tıp alanında uzmanlaşmıştır. Her yaş grubuna yönelik birinci basamak sağlık hizmetlerinde uzun yıllara dayanan deneyime sahiptir.</p>
+                <div class="team-tags">
+                    <span class="team-tag">Innere Medizin</span>
+                    <span class="team-tag">Prävention</span>
+                    <span class="team-tag">Geriatrie</span>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+  <!-- =====================================================
+       HİZMETLER BÖLÜMÜ
+  ===================================================== -->
+    <section class="services" id="services">
+        <div class="services-intro">
+        <div>
+            <div class="section-tag">Hizmetlerimiz</div>
+            <h2 class="section-title">Sağlığınız İçin<br>Kapsamlı Çözümler</h2>
+        </div>
+        <p class="section-sub">GKV ve PKV kapsamında sunduğumuz hizmetlerin tamamı Almanya sağlık standartlarına (SGB V) uygundur.</p>
+        </div>
+        <div class="services-grid">
+        <!-- transition-delay ile kartlar sırayla görünür (stagger efekti) -->
+        <div class="service-card reveal">
+            <span class="svc-icon">🩺</span>
+            <h3>Genel Muayene</h3>
+            <p>Kapsamlı fizik muayene, anamnez ve teşhis hizmetleri. Akut ve kronik hastalıkların yönetimi.</p>
+            <a href="#termin" class="svc-link">Randevu Al &rarr;</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.1s">
+            <span class="svc-icon">🔬</span>
+            <h3>Check-up & Vorsorge</h3>
+            <p>GKV kapsamında ücretsiz Gesundheitscheck, kanser taramaları ve erken teşhis programları.</p>
+            <a href="#termin" class="svc-link">Randevu Al &rarr;</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.2s">
+            <span class="svc-icon">💊</span>
+            <h3>Kronik Hastalık Yönetimi</h3>
+            <p>Diyabet, hipertansiyon, tiroid hastalıkları ve diğer kronik durumların uzman takibi.</p>
+            <a href="#termin" class="svc-link">Randevu Al &rarr;</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.15s">
+            <span class="svc-icon">💉</span>
+            <h3>Aşılama (Impfungen)</h3>
+            <p>STIKO tavsiyelerine uygun aşı programları. Grip, Covid-19, seyahat aşıları ve daha fazlası.</p>
+            <a href="#termin" class="svc-link">Randevu Al &rarr;</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.25s">
+            <span class="svc-icon">🖥️</span>
+            <h3>Online Video Konsültasyon</h3>
+            <p>DSGVO uyumlu güvenli platform üzerinden video muayene. KV-Safenet altyapısıyla koruma altında.</p>
+            <a href="#termin" class="svc-link">Randevu Al &rarr;</a>
+        </div>
+        <div class="service-card reveal" style="transition-delay:.35s">
+            <span class="svc-icon">📄</span>
+            <h3>Raporlar & Belgeler</h3>
+            <p>İşe dönüş sertifikaları (AU), Krankschreibung, iş yeri muayenesi ve sigorta raporları.</p>
+            <a href="#termin" class="svc-link">Randevu Al &rarr;</a>
+        </div>
+        </div>
+    </section>
+
+      <!-- =====================================================
+       INSURANCE
+  ===================================================== -->
+    <section id="insurance">
+        <div class="container">
+
+            <div class="insurance-fade-in">
+            <div class="section-label">Sigortalar</div>
+
+            <h2 class="section-title">
+                Ortak Sigorta Sağlayıcılarımız
+            </h2>
+            </div>
+
+            <div class="vers-grid insurance-fade-in">
+
+            <div class="vers-card">
+                <div class="vers-badge gkv">AOK</div>
+                <div class="vers-name">AOK Rheinland</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge gkv">TK</div>
+                <div class="vers-name">Techniker Krankenkasse</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge gkv">BKK</div>
+                <div class="vers-name">BKK Krankenkassen</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge gkv">DAK</div>
+                <div class="vers-name">DAK-Gesundheit</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge gkv">IKK</div>
+                <div class="vers-name">IKK Classic</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge pkv">AXA</div>
+                <div class="vers-name">AXA Krankenversicherung</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge pkv" style="position: relative; left: -10px;" >ALL</div>
+                <div class="vers-name" style="position: relative; left: -10px;">Allianz Private Krankenversicherung</p></div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge pkv">UKV</div>
+                <div class="vers-name">UKV – Union Krankenversicherung</div>
+            </div>
+
+            <div class="vers-card">
+                <div class="vers-badge pkv">DEB</div>
+                <div class="vers-name">Debeka Krankenversicherung</div>
+            </div>
+
+            </div> 
+        </div>
+    </section>
+
+
+      <!-- =====================================================
+       VLOG / SAĞLIK BLOGU
+       Son 5 yazı numaralı liste formatında.
+    ===================================================== -->
+    <section class="vlog" id="vlog">
+        <div class="vlog-header">
+            <div>
+                <div class="section-tag">Sağlık Blogu</div>
+                <h2 class="section-title">Son Vlog Yazıları</h2>
+            </div>
+            <a href="#" class="btn-outline" style="color:var(--navy);border-color:var(--warm);background:transparent;padding:.7rem 1.5rem;border-radius:4px;text-decoration:none;font-size:.88rem;font-weight:500">Tüm Yazılar &rarr;</a>
+            </div>
+            <div class="vlog-list">
+
+            <div class="vlog-item reveal" style="transition-delay:.05s">
+                <div class="vlog-num">01</div>
+                <div class="vlog-body">
+                <div class="vlog-meta"><span class="vlog-tag">Önleyici Tıp</span> <span>28 Nisan 2025</span> <span>5 dk okuma</span></div>
+                <h3>Kış Aylarında Bağışıklık Sisteminizi Güçlendirmenin 7 Yolu</h3>
+                <p class="vlog-excerpt">Vitamin D eksikliği, uyku düzeni ve beslenme alışkanlıklarının bağışıklık üzerindeki kanıtlanmış etkileri.</p>
+                </div>
+                <div class="vlog-arrow">&#8594;</div>
+            </div>
+
+            <div class="vlog-item reveal" style="transition-delay:.1s">
+                <div class="vlog-num">02</div>
+                <div class="vlog-body">
+                <div class="vlog-meta"><span class="vlog-tag">Kronik Hastalıklar</span> <span>14 Nisan 2025</span> <span>8 dk okuma</span></div>
+                <h3>Yüksek Tansiyon ve Sessiz Tehlike: Belirtiler Olmadan Nasıl Anlaşılır?</h3>
+                <p class="vlog-excerpt">Almanya'da 20 milyon kişiyi etkileyen hipertansiyonda erken teşhis neden hayat kurtarır?</p>
+                </div>
+                <div class="vlog-arrow">&#8594;</div>
+            </div>
+
+            <div class="vlog-item reveal" style="transition-delay:.15s">
+                <div class="vlog-num">03</div>
+                <div class="vlog-body">
+                <div class="vlog-meta"><span class="vlog-tag">Beslenme</span> <span>2 Nisan 2025</span> <span>6 dk okuma</span></div>
+                <h3>Akdeniz Diyeti mi, Aralıklı Oruç mu? Bilim Ne Diyor?</h3>
+                <p class="vlog-excerpt">Güncel çalışmaların ışığında hangi beslenme modelinin metabolizma için daha faydalı olduğunu inceliyoruz.</p>
+                </div>
+                <div class="vlog-arrow">&#8594;</div>
+            </div>
+
+            <div class="vlog-item reveal" style="transition-delay:.2s">
+                <div class="vlog-num">04</div>
+                <div class="vlog-body">
+                <div class="vlog-meta"><span class="vlog-tag">Dijital Sağlık</span> <span>19 Mart 2025</span> <span>4 dk okuma</span></div>
+                <h3>Elektronik Hasta Kartı (ePA): Almanya'nın Dijital Sağlık Devrimi</h3>
+                <p class="vlog-excerpt">2025'te zorunlu hale gelen ePA hakkında bilmeniz gereken her şey – avantajlar, gizlilik ve nasıl kullanılır.</p>
+                </div>
+                <div class="vlog-arrow">&#8594;</div>
+            </div>
+
+            <div class="vlog-item reveal" style="transition-delay:.25s">
+                <div class="vlog-num">05</div>
+                <div class="vlog-body">
+                <div class="vlog-meta"><span class="vlog-tag">Ruh Sağlığı</span> <span>5 Mart 2025</span> <span>7 dk okuma</span></div>
+                <h3>Burnout mu, Yorgunluk mu? Doktorunuzla Ne Zaman Konuşmalısınız?</h3>
+                <p class="vlog-excerpt">Tükenmişlik sendromu ile kronik yorgunluğu ayırt etmek için pratik rehber ve profesyonel yardım alma zamanı.</p>
+                </div>
+                <div class="vlog-arrow">&#8594;</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--white);font-weight:700;">Dr. med. Atilla Cintosun</div>
+        <div style="font-size:0.68rem;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase;font-weight:500;margin-bottom:4px;">Dahiliye &amp; Genel Tıp · Essen</div>
+        <p class="footer-desc">Herne'de 18 yılı aşkın süredir Türkçe ve Almanca dahiliye hizmetleri sunuyoruz. GKV ve PKV tüm sigortalar kabul edilir.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Hizmetler</div>
+        <ul class="footer-links">
+          <li><a href="#">Dahiliye Muayenesi</a></li>
+          <li><a href="#">Kardiyovasküler Tarama</a></li>
+          <li><a href="#">Diyabet &amp; Metabolizma</a></li>
+          <li><a href="#">Solunum Yolu Hastalıkları</a></li>
+          <li><a href="#">Önleyici Taramalar</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Hızlı Bağlantılar</div>
+        <ul class="footer-links">
+          <li><a href="#">Hakkımda</a></li>
+          <li><a href="#">Vlog &amp; Yazılar</a></li>
+          <li><a href="#">Randevu Al</a></li>
+          <li><a href="#">Hasta Yorumları</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">İletişim</div>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fa fa-map-marker-alt" style="width:14px;"></i>Schaeferstraße 9, 44623 Herne</a></li>
+          <li><a href="tel:+4920112345678"><i class="fa fa-phone-alt" style="width:14px;"></i>+49 232 353 025</a></li>
+          <li><a href="mailto:info@dryildiz.de"><i class="fa fa-envelope" style="width:14px;"></i>praxis@cintosun.de</a></li>
+        </ul>
+        <div style="margin-top:20px;padding:16px;background:rgba(192,57,43,0.12);border:1px solid rgba(192,57,43,0.25);border-radius:10px;">
+          <div style="color:#e74c3c;font-weight:700;font-size:0.85rem;margin-bottom:4px;"><i class="fa fa-ambulance" style="margin-right:6px;"></i>Acil Durum</div>
+          <div style="color:#94a3b8;font-size:0.82rem;">Yaşamı tehdit eden durumlarda hemen <strong style="color:#e74c3c;">112</strong>'yi arayın.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dr. med. Atilla Cintosun – Tüm hakları saklıdır.</span>
+      <div class="kvkk">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutzerklärung</a>
+        <a href="#">KVKK Aydınlatma Metni</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/carousel.js" defer></script>
+    <script src="js/announcement.js" defer></script>
+    <script src="js/team.js" defer></script>
+    <script src="js/services.js" defer></script>
+    <script src="js/insurance.js" defer></script>
+    <script src="js/vlog.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+    #vlog { 
+        display: flex;
+        background: var(--cream); 
+        width: 100%;
+        min-height: 110vh;
+        height: 110vh;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    #vlog.section-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.8rem;
+    }
+
+    /* Ana bölüm başlığı */
+    #vlog .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+
+    #vlog .section-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 560px;
+    }
+
+    .vlog-header {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 80vw;
+     
+    }
+
+    .vlog-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 10vh;}
+
+    .vlog-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 2rem;
+      padding: 1.8rem 0;
+      border-bottom: 1px solid var(--warm);
+      transition: all 0.35s;
+      cursor: pointer;
+      position: relative;
+    }
+
+    /* Hover'da altında beyaz kutu belirer */
+    .vlog-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      right: -2rem;
+      top: 0;
+      bottom: 0;
+      background: var(--white);
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: -1;
+    }
+
+    .vlog-item:hover::before { opacity: 1; }
+    .vlog-item:hover { padding-left: 0.5rem; padding-right: 0.5rem; } /* Hafif içeri girer */
+
+    /* Büyük numara — pasif halde soluk */
+    .vlog-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--warm);
+      line-height: 1;
+      min-width: 3rem;
+      text-align: center;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    .vlog-item:hover .vlog-num { color: var(--gold); opacity: 0.8; }
+
+    .vlog-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+      transition: color 0.3s;
+    }
+
+    .vlog-item:hover .vlog-body h3 { color: var(--gold); }
+
+    .vlog-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Kategori etiketi — pill şeklinde */
+    .vlog-tag {
+      background: var(--gold);
+      color: var(--cream);
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      transition: background 0.3s, color 0.3s;
+    }
+    .vlog-item:hover :hover .vlog-tag  { background: var(--navy);  }
+    .vlog-item:hover :hover p{ color: var(--navy); font-weight: 500;}
+
+    .vlog-excerpt {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-top: 0.4rem;
+      max-width: 500px;
+    }
+
+    /* Sağdaki ok butonu — hover'da teal olur */
+    .vlog-arrow {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1.5px solid var(--warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: all 0.3s;
+      flex-shrink: 0;
+    }
+
+    .vlog-item:hover .vlog-arrow {
+      background: var(--gold);
+      border-color: var(--navy);
+      color: var(--cream);
+    }

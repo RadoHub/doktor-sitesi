@@ -1,0 +1,135 @@
+#services  {
+  padding: 6rem 5rem;
+  height: 100vh;
+}
+
+#services .services {
+  background: var(--cream);
+}
+
+#services .services-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#services .section-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.8rem;
+}
+
+#services .section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+#services .section-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+#services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+#services .service-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.4s;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+#services .service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+#services .service-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(110, 96, 15, 0.95);
+}
+
+#services .service-card:hover::before {
+  opacity: 0.03;
+}
+
+#services .svc-icon {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+#services .service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 0.7rem;
+}
+
+#services .service-card p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+#services .svc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  color: var(--teal);
+  font-weight: 500;
+  text-decoration: none;
+  transition: gap 0.3s;
+}
+
+#services .svc-link:hover {
+  gap: 0.7rem;
+}
+
+/* Scroll reveal animasyonu */
+#services .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+#services .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobil */
+@media (max-width: 900px) {
+  section {
+    padding: 4rem 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
