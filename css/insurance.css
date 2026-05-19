@@ -13,6 +13,7 @@
   min-height60vh:
   margin: auto auto;
   padding: 10vh 2rem;
+  min-width:inherit;
 }
 
 /* TITLE */
