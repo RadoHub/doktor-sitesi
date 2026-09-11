@@ -1,0 +1,221 @@
+.appointment-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #faf9f6;
+  color: #061a33;
+  padding: clamp(56px, 7vw, 96px) clamp(24px, 6vw, 92px);
+}
+
+.appointment-inner {
+  width: min(1380px, 100%);
+  min-height: calc(100vh - clamp(112px, 14vw, 192px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  align-items: center;
+  gap: clamp(48px, 8vw, 120px);
+}
+
+.appointment-title {
+  margin: 10px 0 28px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.35rem, 4vw, 4.5rem);
+  line-height: 1;
+  color: #061a33;
+  letter-spacing: 0;
+}
+
+.appointment-line {
+  width: 60px;
+  height: 3px;
+  margin-bottom: 40px;
+  background: #0f8087;
+}
+
+.contact-list {
+  display: grid;
+  gap: 26px;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #8a6420;
+  background: #edf4f2;
+  font-size: 1.08rem;
+}
+
+.contact-item h3 {
+  margin: 1px 0 6px;
+  color: #0f8087;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #061a33;
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  line-height: 1.45;
+}
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #0f8087;
+}
+
+.appointment-form-wrap {
+  width: 100%;
+}
+
+.appointment-form {
+  display: grid;
+  gap: 22px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 20px;
+}
+
+.appointment-form label {
+  display: grid;
+  gap: 9px;
+}
+
+.appointment-form label span {
+  color: #64748b;
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  border: 1px solid #ded8cf;
+  border-radius: 8px;
+  outline: none;
+  background: #f3f0eb;
+  color: #061a33;
+  font: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.appointment-form input,
+.appointment-form select {
+  height: 54px;
+  padding: 0 20px;
+}
+
+.appointment-form textarea {
+  min-height: 138px;
+  resize: vertical;
+  padding: 17px 20px;
+  line-height: 1.55;
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  color: #6f7785;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  border-color: #8a6420;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 4px rgba(138, 100, 32, 0.14),
+    0 12px 28px rgba(6, 26, 51, 0.08);
+}
+
+.appointment-form label:focus-within span {
+  color: #8a6420;
+}
+
+.appointment-form button {
+  height: 58px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #0f8087;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.appointment-form button:hover,
+.appointment-form button:focus-visible {
+  background: #8a6420;
+  box-shadow: 0 16px 34px rgba(138, 100, 32, 0.24);
+  transform: translateY(-2px);
+}
+
+.appointment-form button:focus-visible {
+  outline: 3px solid rgba(138, 100, 32, 0.24);
+  outline-offset: 3px;
+}
+
+@media (max-width: 980px) {
+  .appointment-section {
+    align-items: flex-start;
+  }
+
+  .appointment-inner {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .appointment-section {
+    padding: 48px 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .appointment-form input,
+  .appointment-form select {
+    height: 50px;
+    padding-inline: 14px;
+  }
+
+  .appointment-form textarea {
+    padding-inline: 14px;
+  }
+}
