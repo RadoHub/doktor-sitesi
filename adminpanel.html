@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Dr. Atilla Cintosun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/adminpanel.css">
+</head>
+<body>
+  <aside class="admin-sidebar">
+    <a class="admin-brand" href="#">
+      <span>Dr.</span>
+      Atilla Cintosun
+      <small>Praxis Yönetim Paneli</small>
+    </a>
+
+    <nav class="admin-nav" aria-label="Admin navigasyon">
+      <a class="active" href="#dashboard"><i class="fa fa-chart-line"></i> Genel Bakış</a>
+      <a href="#appointments"><i class="fa fa-calendar-check"></i> Randevular</a>
+      <a href="#announcements"><i class="fa fa-bullhorn"></i> Duyurular</a>
+      <a href="#vlog-admin"><i class="fa fa-newspaper"></i> Vlog Yazıları</a>
+      <a href="#messages"><i class="fa fa-envelope-open-text"></i> Mesajlar</a>
+      <a href="#reviews"><i class="fa fa-star"></i> Yorumlar</a>
+      <a href="#hours"><i class="fa fa-clock"></i> Çalışma Saatleri</a>
+      <a href="#content"><i class="fa fa-pen-to-square"></i> Site İçerikleri</a>
+      <a href="#contact"><i class="fa fa-location-dot"></i> İletişim</a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div>
+        <span class="admin-kicker">Admin Panel</span>
+        <h1>Genel Bakış</h1>
+      </div>
+
+      <div class="admin-actions">
+        <button type="button"><i class="fa fa-bell"></i></button>
+        <button type="button"><i class="fa fa-user-doctor"></i> Admin</button>
+      </div>
+    </header>
+
+    <section class="stats-grid" id="dashboard">
+      <article class="stat-card">
+        <span>Bugünkü Randevu</span>
+        <strong>12</strong>
+        <small>4 randevu öğleden sonra</small>
+      </article>
+
+      <article class="stat-card">
+        <span>Yeni Mesaj</span>
+        <strong>7</strong>
+        <small>3 tanesi randevu talebi</small>
+      </article>
+
+      <article class="stat-card">
+        <span>Onay Bekleyen</span>
+        <strong>5</strong>
+        <small>Telefonla dönüş gerekli</small>
+      </article>
+
+      <article class="stat-card">
+        <span>Yorum Puanı</span>
+        <strong>4.9</strong>
+        <small>Son 30 gün ortalaması</small>
+      </article>
+    </section>
+
+    <section class="admin-layout">
+      <div class="admin-column">
+        <section class="panel-card" id="appointments">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">Randevular</span>
+              <h2>Yaklaşan Talepler</h2>
+            </div>
+            <button type="button" class="admin-primary">Yeni Ekle</button>
+          </div>
+
+          <div class="appointment-table">
+            <div class="table-row table-head">
+              <span>Hasta</span>
+              <span>Tarih</span>
+              <span>Saat</span>
+              <span>Sigorta</span>
+              <span>Durum</span>
+            </div>
+            <div class="table-row">
+              <span>Ayşe K.</span>
+              <span>25.05.2026</span>
+              <span>09:00 - 10:00</span>
+              <span>GKV</span>
+              <span class="status pending">Bekliyor</span>
+            </div>
+            <div class="table-row">
+              <span>Mehmet A.</span>
+              <span>25.05.2026</span>
+              <span>10:00 - 11:00</span>
+              <span>PKV</span>
+              <span class="status approved">Onaylandı</span>
+            </div>
+            <div class="table-row">
+              <span>Zeynep T.</span>
+              <span>26.05.2026</span>
+              <span>15:00 - 16:00</span>
+              <span>Selbstzahler</span>
+              <span class="status pending">Bekliyor</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-card" id="announcements">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">Duyurular</span>
+              <h2>Duyuru Yönetimi</h2>
+            </div>
+            <button type="button" class="admin-primary">Duyuru Ekle</button>
+          </div>
+
+          <form class="admin-form announcement-admin-form">
+            <div class="admin-form-grid">
+              <label>
+                <span>Duyuru Başlığı</span>
+                <input type="text" placeholder="Örn. Bayram tatili çalışma saatleri">
+              </label>
+              <label>
+                <span>Duyuru Kategorisi</span>
+                <select>
+                  <option>Uyarı</option>
+                  <option>Önemli</option>
+                  <option>Tebrik</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>Duyuru Metni</span>
+              <textarea placeholder="Duyuruyu buraya yazın..."></textarea>
+            </label>
+          </form>
+
+          <div class="admin-list">
+            <article>
+              <div>
+                <span class="announcement-badge important"><i class="fa fa-circle-exclamation"></i> Önemli</span>
+                <strong>Yeni çalışma saatleri</strong>
+                <span>25.05.2026</span>
+                <p>Çarşamba ve Cuma günleri muayene saatleri güncellendi.</p>
+              </div>
+              <button type="button" class="danger-btn">Sil</button>
+            </article>
+            <article>
+              <div>
+                <span class="announcement-badge warning"><i class="fa fa-triangle-exclamation"></i> Uyarı</span>
+                <strong>Online randevu bilgilendirmesi</strong>
+                <span>18.05.2026</span>
+                <p>Randevu talepleri web sitesi üzerinden alınmaya başlanmıştır.</p>
+              </div>
+              <button type="button" class="danger-btn">Sil</button>
+            </article>
+            <article>
+              <div>
+                <span class="announcement-badge congrats"><i class="fa fa-award"></i> Tebrik</span>
+                <strong>Hasta memnuniyeti teşekkür mesajı</strong>
+                <span>10.05.2026</span>
+                <p>Değerli hastalarımıza geri bildirimleri ve güvenleri için teşekkür ederiz.</p>
+              </div>
+              <button type="button" class="danger-btn">Sil</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel-card" id="vlog-admin">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">Vlog / Blog</span>
+              <h2>Yazı Yönetimi</h2>
+            </div>
+            <button type="button" class="admin-primary">Yazı Yayınla</button>
+          </div>
+
+          <form class="admin-form blog-admin-form">
+            <div class="admin-form-grid">
+              <label>
+                <span>Yazı Başlığı</span>
+                <input type="text" placeholder="Örn. Diyabet Takibinde Nelere Dikkat Edilmeli?">
+              </label>
+              <label>
+                <span>Kategori</span>
+                <input type="text" placeholder="Örn. Diyabet">
+              </label>
+            </div>
+            <label>
+              <span>Kısa Açıklama</span>
+              <input type="text" placeholder="Yazı listesinde görünecek kısa açıklama">
+            </label>
+            <label>
+              <span>Yazı İçeriği</span>
+              <textarea placeholder="Doktorun vlog/blog yazısını buraya yazın..."></textarea>
+            </label>
+          </form>
+
+          <div class="admin-list">
+            <article>
+              <div>
+                <strong>Kış Aylarında Bağışıklık Sisteminizi Güçlendirmenin 7 Yolu</strong>
+                <span>Önleyici Tıp · 28 Nisan 2025</span>
+                <p>Vitamin D eksikliği, uyku düzeni ve beslenme alışkanlıkları hakkında kısa rehber.</p>
+              </div>
+              <button type="button" class="danger-btn">Kaldır</button>
+            </article>
+            <article>
+              <div>
+                <strong>Yüksek Tansiyon ve Sessiz Tehlike</strong>
+                <span>Kronik Hastalıklar · 14 Nisan 2025</span>
+                <p>Hipertansiyonda erken teşhisin önemini anlatan bilgilendirme yazısı.</p>
+              </div>
+              <button type="button" class="danger-btn">Kaldır</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel-card" id="messages">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">Mesajlar</span>
+              <h2>Son Gelen Mesajlar</h2>
+            </div>
+          </div>
+
+          <div class="message-list">
+            <article>
+              <strong>Elif S.</strong>
+              <span>Randevu Talebi</span>
+              <p>Diyabet kontrolü için uygun randevu saati hakkında bilgi almak istiyorum.</p>
+            </article>
+            <article>
+              <strong>Hasan Y.</strong>
+              <span>Reçete / Rapor</span>
+              <p>Mevcut raporumun yenilenmesi için nasıl ilerlemem gerekiyor?</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div class="admin-column">
+        <section class="panel-card" id="hours">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">Praxis</span>
+              <h2>Çalışma Saatleri</h2>
+            </div>
+            <button type="button" class="admin-secondary">Düzenle</button>
+          </div>
+
+          <div class="hours-admin-list">
+            <div><span>Pazartesi</span><strong>08.00 - 11.30 / 15.00 - 17.30</strong></div>
+            <div><span>Salı</span><strong>08.00 - 11.30 / 15.00 - 17.30</strong></div>
+            <div><span>Çarşamba</span><strong>08.00 - 12.30</strong></div>
+            <div><span>Perşembe</span><strong>08.00 - 11.30 / 15.00 - 17.30</strong></div>
+            <div><span>Cuma</span><strong>08.00 - 12.30</strong></div>
+            <div><span>Cumartesi</span><strong>Kapalı</strong></div>
+            <div><span>Pazar</span><strong>Kapalı</strong></div>
+          </div>
+        </section>
+
+        <section class="panel-card" id="reviews">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">Yorumlar</span>
+              <h2>Yayınlanan Yorumlar</h2>
+            </div>
+            <button type="button" class="admin-secondary">Yönet</button>
+          </div>
+
+          <div class="review-admin-card">
+            <div class="stars">★★★★★</div>
+            <p>Doktor bey çok ilgili ve açıklayıcıydı. Muayene sürecinde kendimi güvende hissettim.</p>
+            <strong>Ayşe K.</strong>
+          </div>
+        </section>
+
+        <section class="panel-card" id="contact">
+          <div class="panel-header">
+            <div>
+              <span class="admin-kicker">İletişim</span>
+              <h2>Adres Bilgileri</h2>
+            </div>
+          </div>
+
+          <form class="admin-form">
+            <label>
+              <span>Adres</span>
+              <input type="text" value="Schaeferstraße 9, 44623 Herne">
+            </label>
+            <label>
+              <span>Telefon</span>
+              <input type="text" value="+49 2323 53025">
+            </label>
+            <label>
+              <span>E-posta</span>
+              <input type="email" value="praxis@cintosun.de">
+            </label>
+            <button type="button" class="admin-primary">Kaydet</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
